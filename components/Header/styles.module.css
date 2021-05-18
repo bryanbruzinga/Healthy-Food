@@ -12,12 +12,25 @@
 .header nav ul {
     display: flex;
     justify-content: space-evenly;
-
+    gap: 1rem;
 }
 
-.header nav ul li {
+.header nav ul li{
     font-family: var(--text-font);
-    padding: 1rem;
-    color: var(--white);
+    padding: .8rem 1rem;
     font-size: 1rem;
 }
+
+.header nav ul li a {
+    color: var(--white);
+}
+
+.registerButton {
+    background-color: var(--white);
+    border-radius: .5rem;
+}
+
+.registerButton a {
+    color: var(--primary-color) !important;
+}
+

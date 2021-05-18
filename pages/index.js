@@ -1,10 +1,13 @@
 import MainSection from "../components/MainSection";
-import styles from "../styles/Home.module.css";
+import RecipesSection from "../components/RecipesSection";
+import ServicesSection from "../components/ServicesSection";
 
 export default function Home() {
   return (
     <>
       <MainSection />
+      <RecipesSection />
+      <ServicesSection />
     </>
   );
 }

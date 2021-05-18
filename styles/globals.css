@@ -30,6 +30,6 @@ a {
     --white: #fff;
 }
 
-.gap {
-    padding: 0 6rem;
+.gutter {
+    padding: 1rem 6rem;
 }

@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Healthy Food</title>
       </Head>
-      <main className="gap">
+      <main className="gutter">
         <Header />
         <Component {...pageProps} />
         <Footer />
