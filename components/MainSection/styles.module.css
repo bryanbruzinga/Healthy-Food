@@ -1,0 +1,39 @@
+.mainSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.mainContainerLeft h2 {
+    font-size: 3rem;
+    color: var(--title-color);
+    width: 300px;
+}
+
+.mainContainerLeft div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainContainerLeft input {
+    width: 100%;
+    border: 1px solid var(--title-color);
+    font-family: var(--text-font);
+    padding: .5rem;
+}
+
+.mainContainerLeft button {
+    border: none;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: .5rem;
+}
+
+.mainContainerRight {
+    position: absolute;
+    top: 0;
+    right: 0;  
+    z-index: -1;
+}
