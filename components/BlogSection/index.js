@@ -44,9 +44,9 @@ export default function BlogSection() {
               <Image
                 src={item.img}
                 alt={item.title}
-                width={340}
-                height={240}
-                objectFit="responsive"
+                width={280}
+                height={200}
+                objectFit="cover"
               />
               <h2>{item.title}</h2>
               <div className={styles.cardAuthor}>
@@ -62,7 +62,7 @@ export default function BlogSection() {
             </div>
           );
         })}
-        <button>
+        <button className={styles.ButtonMoveSlide}>
           <BsArrowRight />
         </button>
       </div>

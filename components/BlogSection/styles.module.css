@@ -6,6 +6,7 @@
     justify-content: center;
     background-color: var(--background);
     padding-left: 6rem;
+    overflow: hidden;
 }
 
 .BlogSectionContainer h2 {
@@ -28,24 +29,58 @@
     position: relative;
     padding: 1rem 0;
     gap: 2rem;
+    padding-left: 12rem;
 }
 
-.BlogCardsContainer button {
+.BlogCardsContainer::after {
+    content: '';
     position: absolute;
-    right: 0;
-    top: 50%;
+    right: 10%;
+    width: 200px;
+    height: 100%;
+    background: rgba(255, 255, 255, .4);
 }
 
 .blogCard {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 15px 20px 0px rgba(29,22,77,0.2);
+    width: 348px;
 }
 
 .blogCard h2 {
     font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.cardAuthor {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.cardAuthor span {
+    font-size: 1rem;
+    font-family: var(--text-font);
+    color: var(--text-color);
 }
 
 .cardAuthor img {
     border-radius: 50%;
+}
+
+.ButtonMoveSlide {
+    position: absolute;
+    right: 15%;
+    top: 40%;
+    border: none;    
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 5;
+    transition: filter .2s ease-in;
 }
