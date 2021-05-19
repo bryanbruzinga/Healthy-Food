@@ -1,0 +1,5 @@
+.RegisterSectionContainer h2{
+    font-size: 2rem;
+    font-family: var(--title-font);
+    color: var(--title-color);
+}

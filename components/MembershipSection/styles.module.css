@@ -16,6 +16,7 @@
 
 .MembershipOfferContainer div {
     display: flex;
+    width: 450px;
 }
 
 .MembershipOfferContainer div input {

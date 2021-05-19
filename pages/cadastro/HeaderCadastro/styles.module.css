@@ -1,0 +1,6 @@
+.headerCadastro h1 {
+    font-family: var(--title-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding-left: 6rem;
+}
