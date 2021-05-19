@@ -12,7 +12,10 @@ export default function ServicesSection() {
         objectFit="responsive"
       />
       <div className={styles.serviceDescription}>
-        <h2>The best services ready To serve you</h2>
+        <div>
+          <h2>The best services ready </h2>
+          <h2>To serve you</h2>
+        </div>
         <p>
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts.

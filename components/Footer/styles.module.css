@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer span {
+    font-size: 1rem;
+    font-family: var(--text-font);    
+}
+
+.footer span {
+    color: var(--title-color);
+}
+
+.footer div span {
+    color: var(--text-color);
+    padding: 0 1rem;
+}
