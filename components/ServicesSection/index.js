@@ -4,13 +4,15 @@ import styles from "./styles.module.css";
 export default function ServicesSection() {
   return (
     <section className={styles.serviceContainer}>
-      <Image
-        src="/bloco_services.svg"
-        alt="serviços"
-        width={600}
-        height={600}
-        objectFit="responsive"
-      />
+      <div className={styles.imgService}>
+        <Image
+          src="/bloco_services.svg"
+          alt="serviços"
+          width={600}
+          height={600}
+          objectFit="responsive"
+        />
+      </div>
       <div className={styles.serviceDescription}>
         <div>
           <h2>The best services ready </h2>

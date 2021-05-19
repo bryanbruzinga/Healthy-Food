@@ -35,3 +35,12 @@
     color: var(--primary-color) !important;
 }
 
+@media (max-width: 950px) {
+    .header {
+        padding-left: 2rem;
+    }
+    .header nav ul li a {
+        color: var(--primary-color);
+    }
+  }
+

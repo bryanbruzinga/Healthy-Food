@@ -58,3 +58,25 @@
     cursor: pointer;
     transition: filter .2s ease-in;
 }
+
+@media (max-width: 950px) {
+    .recipesContainer p {
+        width: 350px;
+    }
+    .recipesItem h2 {
+        font-size: 1rem;
+    }
+    .recipesItem button {
+        padding: .5rem 1rem;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    .recipes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

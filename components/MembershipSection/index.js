@@ -11,13 +11,15 @@ export default function MembershipSection() {
           <button>Join</button>
         </div>
       </div>
-      <Image
-        src="/bloco_final_image.svg"
-        alt="Membership"
-        width={620}
-        height={620}
-        objectFit="responsive"
-      />
+      <div className={styles.MembershipImg}>
+        <Image
+          src="/bloco_final_image.svg"
+          alt="Membership"
+          width={620}
+          height={620}
+          objectFit="responsive"
+        />
+      </div>
     </section>
   );
 }

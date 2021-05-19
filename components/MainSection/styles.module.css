@@ -46,3 +46,13 @@
     right: 0;  
     z-index: -1;
 }
+
+@media (max-width: 950px) {
+    .mainSection {
+        justify-content: center;
+        padding-left: 0;
+    }
+    .mainContainerRight {
+        display: none;
+    }
+  }

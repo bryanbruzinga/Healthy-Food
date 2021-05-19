@@ -37,3 +37,33 @@
     cursor: pointer;
     border-radius: .2rem;
 }
+
+@media (max-width: 1025px) {
+    .MembershipSectionContainer {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .MembershipSectionContainer h2 {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 710px) {
+    .MembershipImg {
+        display: none;
+    }
+    .MembershipOfferContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .MembershipOfferContainer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
