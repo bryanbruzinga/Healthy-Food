@@ -2,8 +2,11 @@ import React from "react";
 import styles from "./styles.module.css";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import schema from "../../../helpers/schema";
+import Modal from "../../../components/Modal";
 
 export default function FormCadastro() {
+  const [modalOpen, setModalOpen] = React.useState(false);
+
   function getCep({ target }, setFieldValue) {
     const cep = target.value?.replace(/[^0-9]/g, "");
     if (cep?.length !== 8) {
@@ -20,12 +23,18 @@ export default function FormCadastro() {
   }
 
   function submit(values) {
+    setModalOpen(true);
     localStorage.setItem("formulario", JSON.stringify(values));
-    window.location.href = "/";
+    document.cookie = `formulario=${JSON.stringify(values)}`;
+    setTimeout(() => {
+      setModalOpen(false);
+      window.location.href = "/";
+    }, 2000);
   }
 
   return (
     <div>
+      {modalOpen && <Modal />}
       <Formik
         validationSchema={schema}
         onSubmit={submit}
