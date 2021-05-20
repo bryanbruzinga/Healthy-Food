@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import schema from "../../schema";
+import schema from "../../../helpers/schema";
 
 export default function FormCadastro() {
   function getCep({ target }, setFieldValue) {

@@ -25,8 +25,8 @@ a {
     --title-color: #1D164D;
     --text-color: #9E9BAF;
     --background: #FAFAFC;
-    --title-font: Montserrat;
-    --text-font: Muli;
+    --title-font: 'Montserrat', sans-serif;
+    --text-font: 'Muli', sans-serif;
     --white: #fff;
 }
 
