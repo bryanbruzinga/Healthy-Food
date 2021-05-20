@@ -4,3 +4,10 @@
     font-size: 2rem;
     padding-left: 6rem;
 }
+
+@media (max-width: 730px) {
+    .headerCadastro h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+}

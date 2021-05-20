@@ -56,3 +56,16 @@
         display: none;
     }
   }
+
+@media (max-width: 500px) {
+    .mainContainerLeft h2 {
+        text-align: center;
+    }
+    .mainContainerLeft div {
+        display: flex;
+        justify-content: center;
+    }
+    .mainContainerLeft input {
+        width: 60%;
+    }
+}

@@ -48,6 +48,9 @@
     .MembershipSectionContainer h2 {
         font-size: 1.125rem;
     }
+    .MembershipOfferContainer div input {
+        width: 60%;
+    }
 }
 
 @media (max-width: 710px) {
@@ -65,5 +68,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .MembershipOfferContainer div button {
+        margin-top: 1rem;
     }
 }

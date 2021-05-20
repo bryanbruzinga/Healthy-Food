@@ -54,7 +54,7 @@
 
 @media (max-width: 880px) {
     .serviceDescription h2 {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
     }
 
     .serviceDescription p {
@@ -79,5 +79,8 @@
     }
     .serviceDescription button {
         align-self: center;
+    }
+    .serviceDescription h2 {
+        text-align: center;
     }
 }

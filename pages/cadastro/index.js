@@ -10,13 +10,15 @@ export default function Cadastro() {
       <h2>Register Yourself</h2>
       <div className={styles.RegisterContent}>
         <FormCadastro />
-        <Image
-          src="/register.png"
-          alt="healthy food"
-          width={500}
-          height={500}
-          objectFit="responsive"
-        />
+        <div className={styles.RegisterImg}>
+          <Image
+            src="/register.png"
+            alt="healthy food"
+            width={500}
+            height={500}
+            objectFit="responsive"
+          />
+        </div>
       </div>
     </section>
   );

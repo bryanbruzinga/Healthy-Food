@@ -17,3 +17,21 @@
     color: var(--text-color);
     padding: 0 1rem;
 }
+
+@media (max-width: 880px) {
+    .footer {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer {
+        padding: .5rem 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer span:first-child {
+        margin-bottom: .5rem;
+    }
+}

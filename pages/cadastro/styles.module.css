@@ -11,3 +11,26 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 1200px) {
+    .RegisterImg {
+        position: absolute;
+        opacity: .3;
+        z-index: -1;
+        left: 15%;
+        top: 25%;      
+    }
+}
+
+@media (max-width: 730px) {
+    .RegisterSectionContainer h2{
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 730px) {
+    .RegisterContent {
+        justify-content: center;
+    }
+}
