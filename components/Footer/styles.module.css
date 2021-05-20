@@ -34,6 +34,6 @@
         padding: 0;
     }
     .footer span:first-child {
-        margin-bottom: .5rem;
+        margin: .5rem 0;
     }
 }

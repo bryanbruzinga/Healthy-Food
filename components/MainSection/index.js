@@ -16,7 +16,7 @@ export default function MainSection() {
       </div>
       <div className={styles.mainContainerRight}>
         <Image
-          src="/illustration.svg"
+          src="/Illustration.svg"
           alt="ilustração"
           width={760}
           height={650}

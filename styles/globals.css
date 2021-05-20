@@ -37,3 +37,8 @@ a {
 button:hover {
     filter: brightness(.85);
 }
+
+.active {
+    display: block;
+    color: black;
+}

@@ -20,7 +20,8 @@ export default function FormCadastro() {
   }
 
   function submit(values) {
-    console.log("submit", values);
+    localStorage.setItem("formulario", JSON.stringify(values));
+    window.location.href = "/";
   }
 
   return (
