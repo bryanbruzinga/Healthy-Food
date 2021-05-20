@@ -37,7 +37,7 @@ export default function RecipesSection() {
                 alt={item.name}
                 height={200}
                 width={200}
-                objectFit="cover"
+                objectFit="responsive"
               />
               <div>
                 <h2>{item.name}</h2>

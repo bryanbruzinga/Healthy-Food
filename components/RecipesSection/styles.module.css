@@ -68,15 +68,34 @@
     }
     .recipesItem button {
         padding: .5rem 1rem;
-    }
-    
+    }    
 }
 
 @media (max-width: 850px) {
     .recipes {
         display: flex;
+        flex-direction: column;        
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .recipesContainer{
+        width: 100%;
+        text-align: center;
+    }
+    .recipesContainer p{
+        width: 100%;
+    }
+    .recipes {
+        gap: 1rem;
+    }    
+    .recipesItem div {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+    }
+    .recipesItem div h2 {
+        width: 100%;
     }
 }

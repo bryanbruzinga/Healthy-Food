@@ -119,6 +119,7 @@
         font-size: .8rem;
         margin-left: 0;
         margin-top: .5rem;
+        text-align: center;
     }
     .ButtonMoveSlide {
         right: 8%;
@@ -126,8 +127,12 @@
   }
 
   @media (max-width: 750px) {
+    .BlogSectionContainer {
+        width: 100%;
+    }
     .BlogCardsContainer {
-        padding-left: 10vw;
+        padding-left: 0;
+        gap: .5rem;
     }
     .BlogSectionContainer p {
         width: 100%;
@@ -135,5 +140,20 @@
     .cardAuthor img{
         width: 30px;
         height: 30px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .BlogSectionContainer p {
+        width: 90%;
+    }
+    .blogCard h2 {
+        font-size: .6rem;
+    }
+    .ButtonMoveSlide {
+        right: 2%;
+    }
+    .cardAuthor span {
+        font-size: .6rem;
     }
   }
