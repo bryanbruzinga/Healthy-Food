@@ -73,6 +73,9 @@
         justify-content: center;
         margin: 1rem;
     }
+    .serviceDescription {
+        width: 100%;
+    }
     .serviceDescription p {
         margin-top: 1rem;
         text-align: center;

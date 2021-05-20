@@ -37,10 +37,19 @@
 
 @media (max-width: 950px) {
     .header {
-        padding-left: 2rem;
+        padding: 0 2rem;
+    }
+    .header nav ul li{
+        padding: 0 .5rem;
     }
     .header nav ul li a {
         color: var(--primary-color);
     }
-  }
+}
+
+@media (max-width: 720px) {
+    .header nav ul li{
+        display: none;
+    }
+}
 

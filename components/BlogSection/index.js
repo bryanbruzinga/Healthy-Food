@@ -55,7 +55,7 @@ export default function BlogSection() {
                   alt={item.authorName}
                   width={52}
                   height={52}
-                  objectFit="contain"
+                  objectFit="cover"
                 />
                 <span>{item.authorName}</span>
               </div>

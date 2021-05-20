@@ -54,11 +54,20 @@
 }
 
 @media (max-width: 710px) {
+    .MembershipSectionContainer h2 {
+        width: 100%;
+        text-align: center;
+    }
     .MembershipImg {
         display: none;
     }
+    .MembershipSectionContainer {
+        justify-content: center;
+        padding-left: 0;
+    }
     .MembershipOfferContainer {
         display: flex;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -67,6 +76,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         justify-content: center;
     }
 

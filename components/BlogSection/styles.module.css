@@ -44,8 +44,9 @@
 .blogCard {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0px 15px 20px 0px rgba(29,22,77,0.2);
-    width: 348px;
+    width: 25vw;
 }
 
 .blogCard h2 {
@@ -59,12 +60,14 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     overflow: hidden;
+    justify-content: flex-start;
 }
 
 .cardAuthor span {
     font-size: 1rem;
     font-family: var(--text-font);
     color: var(--text-color);
+    margin-left: 1rem;
 }
 
 .cardAuthor img {
@@ -85,8 +88,52 @@
     transition: filter .2s ease-in;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 930px) {
+    .BlogSectionContainer{
+        padding-left: 0;
+    }    
     .BlogCardsContainer {
-      padding-left: 24rem;
+      display: flex;
+      justify-content: center;
+      padding-left: 15vw;
+    }
+    .BlogCardsContainer::after {
+        right: 0;
+        width: 20vw;
+    }
+    .blogCard {
+        width: 20vw;
+    }
+    .blogCard h2 {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    .cardAuthor {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .cardAuthor span {
+        font-size: .8rem;
+        margin-left: 0;
+        margin-top: .5rem;
+    }
+    .ButtonMoveSlide {
+        right: 8%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .BlogCardsContainer {
+        padding-left: 10vw;
+    }
+    .BlogSectionContainer p {
+        width: 100%;
+    }
+    .cardAuthor img{
+        width: 30px;
+        height: 30px;
     }
   }

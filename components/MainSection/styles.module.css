@@ -60,6 +60,7 @@
 @media (max-width: 500px) {
     .mainContainerLeft h2 {
         text-align: center;
+        width: 100%;
     }
     .mainContainerLeft div {
         display: flex;
