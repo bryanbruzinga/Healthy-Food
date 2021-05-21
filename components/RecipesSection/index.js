@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
+import { Flip } from "react-reveal";
 
 export default function RecipesSection() {
   const recipes = [
@@ -31,19 +32,21 @@ export default function RecipesSection() {
       <div className={styles.recipes}>
         {recipes.map((item, index) => {
           return (
-            <div className={styles.recipesItem} key={index}>
-              <Image
-                src={item.img}
-                alt={item.name}
-                height={200}
-                width={200}
-                objectFit="responsive"
-              />
-              <div>
-                <h2>{item.name}</h2>
-                <button>See Recipe</button>
+            <Flip cascade left key={index}>
+              <div className={styles.recipesItem}>
+                <Image
+                  src={item.img}
+                  alt={item.name}
+                  height={200}
+                  width={200}
+                  objectFit="responsive"
+                />
+                <div>
+                  <h2>{item.name}</h2>
+                  <button>See Recipe</button>
+                </div>
               </div>
-            </div>
+            </Flip>
           );
         })}
       </div>

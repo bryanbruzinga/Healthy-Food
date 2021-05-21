@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
 import { BsArrowRight } from "react-icons/bs";
+import { Zoom } from "react-reveal";
 
 export default function BlogSection() {
   const blogs = [
@@ -40,26 +41,29 @@ export default function BlogSection() {
       <div className={styles.BlogCardsContainer}>
         {blogs.map((item, index) => {
           return (
-            <div className={styles.blogCard} key={index}>
-              <Image
-                src={item.img}
-                alt={item.title}
-                width={280}
-                height={200}
-                objectFit="cover"
-              />
-              <h2>{item.title}</h2>
-              <div className={styles.cardAuthor}>
+            <Zoom cascade right key={index}>
+              <div className={styles.blogCard}>
                 <Image
-                  src={item.authorImg}
-                  alt={item.authorName}
-                  width={52}
-                  height={52}
+                  src={item.img}
+                  alt={item.title}
+                  width={280}
+                  height={200}
                   objectFit="cover"
                 />
-                <span>{item.authorName}</span>
+
+                <h2>{item.title}</h2>
+                <div className={styles.cardAuthor}>
+                  <Image
+                    src={item.authorImg}
+                    alt={item.authorName}
+                    width={52}
+                    height={52}
+                    objectFit="cover"
+                  />
+                  <span>{item.authorName}</span>
+                </div>
               </div>
-            </div>
+            </Zoom>
           );
         })}
         <button className={styles.ButtonMoveSlide}>
